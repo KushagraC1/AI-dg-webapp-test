@@ -1,0 +1,23 @@
+.heading_large{
+    font-size: 60px;
+    color:black;
+}
+canvas{
+    background-color: aquamarine;
+}
+body{
+    background-image:url("backgroundimg.png");
+    background-size:cover;
+}
+.btn-play{
+background-color: chartreuse;
+border-radius: 5px;
+font-size: x-large;
+border-style: none;
+}
+.btn-stop{
+    background-color:crimson;
+    border-radius: 5px;
+    font-size: x-large;
+    border-style: none;
+    }
