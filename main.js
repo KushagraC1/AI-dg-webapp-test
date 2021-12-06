@@ -1,15 +1,17 @@
 sound = "";
-leftWristX = "";
-leftWristY = "";
+leftWristX = 0;
+leftWristY = 0;
 
-rightWristX = "";
-rightWristY = "";
+rightWristX = 0;
+rightWristY = 0;
 
-volume = "";
-speed = "";
+volume = 0;
+speed = 0;
 
-leftWristScore = "";
-rightWristScore = "";
+leftWristScore = 0;
+rightWristScore = 0;
+
+volumeFloored = 0;
 
 function preload(){
 sound = loadSound("music.mp3");
@@ -34,11 +36,9 @@ if(results[0] == null){
 
     leftWristX = results[0].pose.leftWrist.x;
     leftWristY = results[0].pose.leftWrist.y;
-    console.log(leftHandX,leftHandY);
 
     rightWristX = results[0].pose.rightWrist.x;
     rightWristY = results[0].pose.rightWrist.y;
-    console.log(rightHandX,rightHandY);
 
     leftWristScore = results[0].pose.keypoints[10].score;
     rightWristScore = results[0].poseNet.keypoints[9].score;
@@ -86,7 +86,7 @@ for(i = 0; i < size1; i++){
 function playSound(){
     sound.play();
     sound.rate(1);
-    sound.setVolume(10000000000000);
+    sound.setVolume(1);
     
 }
 function stopSound(){
